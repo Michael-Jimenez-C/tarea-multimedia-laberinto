@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Movement : MonoBehaviour
 {
     public float speed = 5f;
@@ -9,8 +9,10 @@ public class Movement : MonoBehaviour
     public bool lockedCursor = true;
     Rigidbody miRigidBody;
     int monedas = 0;
+    int vidas = 3;
     Vector3 posicionInicial;
-
+    public Text Monedas;
+    public Text Vidas;
 
     private void Start()
     {
@@ -43,11 +45,14 @@ public class Movement : MonoBehaviour
 		Debug.Log("Haz encontrado la salida");
 	}else if (colision.CompareTag("Enemigo")){
 		miRigidBody.MovePosition (posicionInicial);
+		vidas = vidas - 1;
+		Vidas.text = "Vidas: "+vidas;
 	}else if (colision.CompareTag("Moneda")){
 		colision.gameObject.SetActive(false);
 		monedas = monedas + 1;
-		Debug.Log("Monedas:");
-		Debug.Log(monedas);
+		Monedas.text = "Monedas: "+monedas;
+		//Debug.Log("Monedas:");
+		//Debug.Log(monedas);
 	}
     }
 }
