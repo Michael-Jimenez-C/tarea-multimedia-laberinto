@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43688315, g: 0.48453325, b: 0.56478846, a: 1}
+  m_IndirectSpecularColor: {r: 0.4409158, g: 0.4896326, b: 0.56973135, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1519,6 +1519,7 @@ GameObject:
   - component: {fileID: 531832981}
   - component: {fileID: 531832980}
   - component: {fileID: 531832984}
+  - component: {fileID: 531832985}
   m_Layer: 0
   m_Name: salida
   m_TagString: Salida
@@ -1543,7 +1544,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -1624,6 +1625,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fa1f2de702b25ecbe366f41bd6a8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &531832985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531832979}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &541657798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1685,7 @@ MonoBehaviour:
   lockedCursor: 1
   Monedas: {fileID: 258313078}
   Vidas: {fileID: 2022260968}
+  index_escena: 2
 --- !u!136 &541657800
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2062,13 +2085,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6533913, y: -0.19061953, z: 0.17507564, w: 0.7114019}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.5274579, y: -0.21682385, z: 0.14133185, w: 0.8091977}
+  m_LocalPosition: {x: 0.56, y: 16.22, z: -0.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 85.132, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 66.195, y: -30, z: 0}
 --- !u!1 &716907360
 GameObject:
   m_ObjectHideFlags: 0

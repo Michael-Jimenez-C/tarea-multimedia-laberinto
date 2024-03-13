@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotador : MonoBehaviour
+public class siguiente_scene : MonoBehaviour
 {
-    public float velocidad = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +13,6 @@ public class Rotador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,velocidad*Time.deltaTime,0);
+        
     }
 }
